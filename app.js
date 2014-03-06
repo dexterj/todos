@@ -17,4 +17,4 @@ app.get('/todos/:id', routes.select);
 app.post('/todos/:id', routes.change);
 
 
-app.listen(4242);
+app.listen(process.env.PORT || 4242);
